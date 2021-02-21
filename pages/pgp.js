@@ -22,11 +22,11 @@ export default function PGP() {
 				<div>
 					<PGPEntry
 						email="adrian@abmgrt.dev"
-						fingerprint="4E4A 4B09 5277 6E3A FF94  5500 B6CC 77BC 47B5 6030"
+						fingerprint="4E4A 4B09 5277 6E3A FF94 5500 B6CC 77BC 47B5 6030"
 					/>
 					<PGPEntry
 						email="adrianbaumgart132@gmail.com"
-						fingerprint="C11C D01D 8454 EAB6 C129  C8C0 F007 100A A9FB E3EF"
+						fingerprint="C11C D01D 8454 EAB6 C129 C8C0 F007 100A A9FB E3EF"
 					/>
 					<p className="text-gray-500 mt-2">
 						School email address not disclosed, please contact me to get the
@@ -40,16 +40,20 @@ export default function PGP() {
 
 function PGPEntry({ email, fingerprint }) {
 	return (
-		<div className="flex">
-			<b className="mr-1">{email}:</b>
-			<a
-				href={`https://dl.abmgrt.dev/pgp/${email}.asc`}
-				target="_blank"
-				className="underline text-blue-600 mr-1"
-			>
-				PGP public key
-			</a>
-			<p className="text-gray-500">Fingerprint: {fingerprint}</p>
+		<div>
+			<p>
+				<b className="mr-1">{email}:</b>
+				<a
+					href={`https://dl.abmgrt.dev/pgp/${email}.asc`}
+					target="_blank"
+					className="underline text-blue-600 mr-1"
+				>
+					PGP public key
+				</a>
+			</p>
+			<p className="text-gray-500 text-sm break-normal	">
+				Fingerprint: {fingerprint}
+			</p>
 		</div>
 	);
 }
