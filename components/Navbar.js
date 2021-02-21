@@ -12,7 +12,7 @@ export default function Navbar({ title }) {
 				<NavbarLink title="Home" href="/" />
 				<img
 					src={
-						'http://www.gravatar.com/avatar/1615be3776f4bdfa985afdea244eb1b3'
+						'https://www.gravatar.com/avatar/1615be3776f4bdfa985afdea244eb1b3'
 					}
 					className="w-10 h-10 rounded-full ml-4 mr-4 border shadow"
 				/>
@@ -41,7 +41,7 @@ export default function Navbar({ title }) {
 						</svg>
 						<img
 							src={
-								'http://www.gravatar.com/avatar/1615be3776f4bdfa985afdea244eb1b3'
+								'https://www.gravatar.com/avatar/1615be3776f4bdfa985afdea244eb1b3'
 							}
 							className="w-10 h-10 rounded-full ml-4 mr-4 border shadow"
 						/>

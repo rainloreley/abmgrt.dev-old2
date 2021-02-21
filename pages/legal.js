@@ -83,7 +83,7 @@ export default function Legal() {
 				<div className="my-4">
 					<i>Thanks to: </i>
 					<a
-						href="http://www.translate-24h.de"
+						href="https://www.translate-24h.de"
 						target="_blank"
 						className="underline text-blue-600"
 					>
