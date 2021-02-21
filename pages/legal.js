@@ -9,7 +9,14 @@ export default function Legal() {
 				<h1 className="font-bold text-3xl">Legal Disclosure</h1>
 				<p className="text-gray-500 mt-2">
 					Because German Law wants me to put this information <b>publicly</b>{' '}
-					and <b>visible to anyone</b> on my <b>personal</b> website{' '}
+					and <b>visible to anyone</b> on my <b>personal</b> website.
+				</p>
+				<p className="text-gray-500">
+					While I don't fully understand why I have to put this here, please
+					consider it as <b>sensitive information</b>. <b>Do not</b> share my
+					address with anyone without my permission. Furthermore, only link to
+					this page in <b>appropriate situations</b>. The best way to contact me
+					is via email. Thank you.
 				</p>
 				<p className="my-2">-------------</p>
 				<p className="my-2 font-bold text-lg">
