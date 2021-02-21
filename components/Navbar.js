@@ -3,18 +3,18 @@ import { useState } from 'react';
 export default function Navbar({ title }) {
 	const [dropdownToggled, setDropdownToggled] = useState(false);
 	return (
-		<div className="top-0 left-0 right-0 m-0 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 w-full h-auto py-4 flex items-center justify-between">
+		<div className="top-0 left-0 right-0 m-0 bg-gradient-to-r from-pink-600 via-red-500 to-yellow-600 w-full h-auto py-4 flex items-center justify-between">
 			<p className="font-bold text-white ml-4 text-xl">{title}</p>
 			<div className="items-center md:flex hidden">
 				<NavbarLink title="PGP/GPG" href="/pgp" />
-				<NavbarLink title="Legal disclosure" href="/legal" />
+				<NavbarLink title="Legal Disclosure" href="/legal" />
 				<NavbarLink title="Privacy" href="/privacy" />
 				<NavbarLink title="Home" href="/" />
 				<img
 					src={
 						'https://www.gravatar.com/avatar/1615be3776f4bdfa985afdea244eb1b3'
 					}
-					className="w-10 h-10 rounded-full ml-4 mr-4 border shadow"
+					className="w-10 h-10 rounded-full ml-4 mr-4 shadow"
 				/>
 			</div>
 			<div className="md:hidden">
@@ -24,7 +24,7 @@ export default function Navbar({ title }) {
 						setDropdownToggled(!dropdownToggled);
 					}}
 				>
-					<div className="flex items-center pl-4 p-4 h-16 text-white">
+					<div className="flex items-center pl-4  text-white">
 						<p style={{ fontSize: '13px', fontWeight: 'bold' }}>Menu</p>
 						<svg
 							class="-mr-1 ml-2 h-5 w-5"
@@ -79,7 +79,7 @@ export default function Navbar({ title }) {
 							class="block px-4 py-2 text-sm text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-dark-secondary hover:text-gray-900 dark:hover:text-gray-100"
 							role="menuitem"
 						>
-							Privacy Policy
+							Privacy
 						</a>
 						<a
 							href="/legal"
@@ -102,4 +102,3 @@ function NavbarLink({ title, href }) {
 		</a>
 	);
 }
-//from-pink-500 via-red-500 to-yellow-500

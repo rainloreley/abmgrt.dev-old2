@@ -6,12 +6,12 @@ export default function PGP() {
 		<Page>
 			<Navbar title="PGP" />
 			<div className="m-4">
-				<p className="font-bold text-3xl">PGP Public keys</p>
+				<p className="font-bold text-3xl">PGP public keys</p>
 				<p className="font-semibold mt-2">
 					If you contact me via email, please use my PGP public key to encrypt
 					the content of the email.
 				</p>
-				<p className="my-2 text-gray-600">
+				<p className="my-2 text-gray-500">
 					Obviously you don't have to but it'd be nice because encryption is
 					important
 				</p>
@@ -20,10 +20,16 @@ export default function PGP() {
 					if you try to contact me, thanks! ^^
 				</p>
 				<div>
-					<PGPEntry email="adrian@abmgrt.dev" />
-					<PGPEntry email="adrianbaumgart132@gmail.com" />
-					<p className="text-gray-700 mt-2">
-						School email address Not disclosed, please contact me to get the
+					<PGPEntry
+						email="adrian@abmgrt.dev"
+						fingerprint="4E4A 4B09 5277 6E3A FF94  5500 B6CC 77BC 47B5 6030"
+					/>
+					<PGPEntry
+						email="adrianbaumgart132@gmail.com"
+						fingerprint="C11C D01D 8454 EAB6 C129  C8C0 F007 100A A9FB E3EF"
+					/>
+					<p className="text-gray-500 mt-2">
+						School email address not disclosed, please contact me to get the
 						email address and PGP public key
 					</p>
 				</div>
@@ -32,19 +38,18 @@ export default function PGP() {
 	);
 }
 
-function PGPEntry({ email }) {
+function PGPEntry({ email, fingerprint }) {
 	return (
-		<div>
-			<p>
-				<b>{email}:</b>{' '}
-				<a
-					href={`https://dl.abmgrt.dev/pgp/${email}.asc`}
-					target="_blank"
-					className="underline text-blue-600"
-				>
-					PGP public key
-				</a>
-			</p>
+		<div className="flex">
+			<b className="mr-1">{email}:</b>
+			<a
+				href={`https://dl.abmgrt.dev/pgp/${email}.asc`}
+				target="_blank"
+				className="underline text-blue-600 mr-1"
+			>
+				PGP public key
+			</a>
+			<p className="text-gray-500">Fingerprint: {fingerprint}</p>
 		</div>
 	);
 }
