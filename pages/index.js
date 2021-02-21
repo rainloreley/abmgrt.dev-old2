@@ -13,9 +13,7 @@ export default function Home() {
 					waiting, please enjoy this nyan cat video:
 				</p>
 				<iframe
-					className="mt-4"
-					width="560"
-					height="315"
+					className="mt-4 md:w-96 md:h-56 w-3/4"
 					src="https://www.youtube-nocookie.com/embed/QH2-TGUlwu4"
 					frameBorder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
