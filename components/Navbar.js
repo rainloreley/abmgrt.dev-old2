@@ -3,7 +3,7 @@ import { useState } from 'react';
 export default function Navbar({ title }) {
 	const [dropdownToggled, setDropdownToggled] = useState(false);
 	return (
-		<div className="top-0 left-0 right-0 m-0 bg-gradient-to-r from-pink-600 via-red-500 to-yellow-600 w-full h-auto py-4 flex items-center justify-between">
+		<div className="top-0 left-0 right-0 m-0 bg-gradient-to-r from-pink-600 via-red-500 to-yellow-600 dark:from-purple-800 dark:via-indigo-600 dark:to-blue-600 w-full h-auto py-4 flex items-center justify-between">
 			<p className="font-bold text-white ml-4 text-xl">{title}</p>
 			<div className="items-center md:flex hidden">
 				<NavbarLink title="PGP/GPG" href="/pgp" />
@@ -102,3 +102,4 @@ function NavbarLink({ title, href }) {
 		</a>
 	);
 }
+//bg-gradient-to-r from-pink-600 via-red-500 to-yellow-600
