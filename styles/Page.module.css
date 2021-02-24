@@ -1,0 +1,14 @@
+.frame {
+	@apply w-full;
+	@apply relative;
+	min-height: 100vh;
+
+	min-height: var(--app-height) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+	.frame {
+		@apply bg-dark-primary;
+		@apply text-white;
+	}
+}
