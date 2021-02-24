@@ -3,13 +3,12 @@ import Page from '../components/Page';
 
 export default function PGP() {
 	return (
-		<Page>
-			<Navbar title="PGP" />
+		<Page title="PGP">
 			<div className="m-4">
 				<p className="font-bold text-3xl">PGP public keys</p>
 				<p className="font-semibold mt-2">
 					If you contact me via email, please use my PGP public key to encrypt
-					the content of the email.
+					the contents of the email.
 				</p>
 				<p className="my-2 text-gray-500">
 					Obviously you don't have to but it'd be nice because encryption is

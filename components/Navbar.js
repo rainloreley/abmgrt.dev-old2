@@ -7,8 +7,7 @@ export default function Navbar({ title }) {
 			<p className="font-bold text-white ml-4 text-xl">{title}</p>
 			<div className="items-center md:flex hidden">
 				<NavbarLink title="PGP/GPG" href="/pgp" />
-				<NavbarLink title="Legal Disclosure" href="/legal" />
-				<NavbarLink title="Privacy" href="/privacy" />
+
 				<NavbarLink title="Home" href="/" />
 				<img
 					src={
@@ -43,7 +42,7 @@ export default function Navbar({ title }) {
 							src={
 								'https://www.gravatar.com/avatar/1615be3776f4bdfa985afdea244eb1b3'
 							}
-							className="w-10 h-10 rounded-full ml-4 mr-4 border shadow"
+							className="w-10 h-10 rounded-full ml-4 mr-4 shadow"
 						/>
 					</div>
 				</button>

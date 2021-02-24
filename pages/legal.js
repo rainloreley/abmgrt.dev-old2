@@ -3,8 +3,7 @@ import Page from '../components/Page';
 
 export default function Legal() {
 	return (
-		<Page>
-			<Navbar title="Legal Disclosure" />
+		<Page title="Legal Disclosure">
 			<div className="m-4">
 				<h1 className="font-bold text-3xl">Legal Disclosure</h1>
 				<p className="text-gray-500 mt-2">

@@ -4,8 +4,7 @@ import Page from '../components/Page';
 
 export default function Home() {
 	return (
-		<Page>
-			<Navbar title="Home" />
+		<Page title="Home">
 			<div className="w-full flex flex-col items-center text-center justify-center mt-20 px-4">
 				<p className="font-bold text-3xl">Hello there!</p>
 				<p className="mt-2">

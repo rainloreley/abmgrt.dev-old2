@@ -3,8 +3,7 @@ import Page from '../components/Page';
 
 export default function Privacy() {
 	return (
-		<Page>
-			<Navbar title="Privacy Policy" />
+		<Page title="Privacy Policy">
 			<div className="m-4">
 				<h1 className="font-bold text-3xl">Never gonna give up your Privacy</h1>
 
