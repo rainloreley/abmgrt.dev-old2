@@ -87,6 +87,13 @@ export default function Navbar({ title }) {
 						>
 							Legal Disclosure
 						</a>
+						<a
+							href="https://git.abmgrt.dev/exc_bad_access/abmgrt.dev"
+							class="block px-4 py-2 text-sm text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-dark-secondary hover:text-gray-900 dark:hover:text-gray-100"
+							role="menuitem"
+						>
+							Source Code
+						</a>
 					</div>
 				</div>
 			</div>
