@@ -13,10 +13,7 @@ export default function Home() {
 						className="w-12 h-12 rounded-full ml-4 mr-4 shadow"
 					/>
 				</div>
-				<p className="mt-2">
-					Because of my inability to think of text that I can put here, I'm
-					gonna keep it simple.
-				</p>
+				<p className="mt-2">Welcome to my website! Here's a cookie: 🍪</p>
 				<div className="mt-6">
 					<p className="text-2xl font-semibold">$ whoami</p>
 					<div className="mx-2">
