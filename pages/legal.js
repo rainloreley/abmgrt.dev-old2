@@ -7,15 +7,15 @@ export default function Legal() {
 			<div className="m-4">
 				<h1 className="font-bold text-3xl">Legal Disclosure</h1>
 				<p className="text-gray-500 mt-2">
-					Because German Law wants me to put this information <b>publicly</b>{' '}
-					and <b>visible to anyone</b> on my <b>personal</b> website.
+					Required by German Law. Please don't abuse this information, thank you
+					^^
 				</p>
-				<p className="text-gray-500">
-					While I don't fully understand why I have to put this here, please
-					consider it as <b>sensitive information</b>. <b>Do not</b> share my
-					address with anyone without my permission. Furthermore, only link to
-					this page in <b>appropriate situations</b>. The best way to contact me
-					is via email. Thank you.
+				<p className="text-gray-500 mt-2">
+					If you actually need to contact me, please use{' '}
+					<a href="/pgp" className="underline italic">
+						email
+					</a>{' '}
+					first
 				</p>
 				<p className="my-2">-------------</p>
 				<p className="my-2 font-bold text-lg">

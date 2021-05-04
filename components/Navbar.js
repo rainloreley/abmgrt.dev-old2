@@ -3,10 +3,10 @@ import { useState } from 'react';
 export default function Navbar({ title }) {
 	const [dropdownToggled, setDropdownToggled] = useState(false);
 	return (
-		<div className="top-0 left-0 right-0 m-0 bg-gradient-to-r from-pink-600 via-red-500 to-yellow-600 dark:from-purple-800 dark:via-indigo-600 dark:to-blue-600 w-full h-auto py-4 flex items-center justify-between">
+		<div className="top-0 left-0 right-0 m-0 bg-gradient-to-r from-pink-600 via-red-500 to-yellow-600 dark:from-purple-800 dark:via-indigo-600 dark:to-blue-600 w-full h-auto py-4 flex items-center justify-between shadow-xl rounded-b-xl">
 			<p className="font-bold text-white ml-4 text-xl">{title}</p>
 			<div className="items-center md:flex hidden">
-				<NavbarLink title="PGP/GPG" href="/pgp" />
+				<NavbarLink title="Contact (+ PGP/GPG)" href="/pgp" />
 
 				<NavbarLink title="Home" href="/" />
 				<img
@@ -69,7 +69,7 @@ export default function Navbar({ title }) {
 							class="block px-4 py-2 text-sm text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-dark-secondary hover:text-gray-900 dark:hover:text-gray-100"
 							role="menuitem"
 						>
-							PGP/GPG
+							Contact (+ PGP/GPG)
 						</a>
 					</div>
 					<div class="py-1">

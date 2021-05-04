@@ -23,7 +23,7 @@ export default function Footer() {
 	}
 
 	return (
-		<div className="bottom-0 m-0 absolute w-full h-16 bg-gray-100 dark:bg-dark-secondary justify-between flex items-center pl-4">
+		<div className="bottom-0 m-0 absolute w-full h-16 bg-gray-100 dark:bg-dark-tertiary justify-between flex items-center pl-4 rounded-t-xl shadow-xl">
 			<a onClick={increaseCounter}>
 				<FooterEasterEggRenderer count={clickCounter} />
 			</a>
@@ -68,7 +68,7 @@ function FooterEasterEggRenderer({ count }) {
 			return (
 				<div className="flex dark:text-gray-400">
 					<HeartIcon />
-					<p className="ml-2">{'you are amazing <3'}</p>
+					<p className="ml-2 text-gray-600">{'you are amazing <3'}</p>
 				</div>
 			);
 		default:

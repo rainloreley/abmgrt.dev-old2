@@ -5,7 +5,14 @@ export default function Home() {
 		<Page title="Home">
 			<div className="w-full flex flex-col mt-12 px-4">
 				<div className="flex flex-row justify-between items-center mb-2">
-					<p className="font-bold text-3xl">Hello there!</p>
+					<div className="flex flex-col">
+						<p className="font-bold text-3xl">Hello there!</p>
+						{Math.random() * 100 < 10 ? (
+							<p className="italic text-gray-500">The cake is a lie</p>
+						) : (
+							<p></p>
+						)}
+					</div>
 					<img
 						src={
 							'https://www.gravatar.com/avatar/1615be3776f4bdfa985afdea244eb1b3'
@@ -14,6 +21,9 @@ export default function Home() {
 					/>
 				</div>
 				<p className="mt-2">Welcome to my website! Here's a cookie: 🍪</p>
+				<p className="italic text-gray-500 text-sm ml-2">
+					jk, this website doesn't use/need cookies ;)
+				</p>
 				<div className="mt-6">
 					<p className="text-2xl font-semibold">$ whoami</p>
 					<div className="mx-2">
@@ -21,14 +31,14 @@ export default function Home() {
 							Idk, who am I? Most people know me as "Adrian", so I guess you can
 							call me that.
 						</p>
-						<p className="mt-2">
+						<p>
 							When I'm motivated, I do some coding stuff. Mostly mobile app
 							development (for iOS, <i>sometimes</i> for Android) and web
 							development
 						</p>
-						<p className="mt-2">
+						<p>
 							There are some programming languages I know such as Swift,
-							JavaScript, TypeScript, Dart and a bit of Kotlin and C++
+							JavaScript, TypeScript, Dart and a bit of Kotlin.
 						</p>
 					</div>
 				</div>
@@ -37,9 +47,17 @@ export default function Home() {
 					<div className="mx-2">
 						<p className="mt-2">
 							Here are some of my projects I worked on. I'm not saying they're
-							any good, but I'll list them here anyways
+							any good, but I'll list them here anyways.
 						</p>
 						<div className="grid lg:grid-cols-3 gap-6 justify-center mt-4 ml-4 md:grid-cols-2 grid-cols-1">
+							<ProjectCard
+								name="hetznercloudapp-ios"
+								description="An iOS app to manage Hetzner Cloud servers (not ready yet - name pending)"
+								license="MIT"
+								isDiscontinued={false}
+								isOpensource={true}
+								codeurl="https://git.abmgrt.dev/exc_bad_access/hetznercloudapp-ios"
+							/>
 							<ProjectCard
 								name="Spica"
 								description="A mobile client for Alles Micro"
@@ -66,9 +84,16 @@ export default function Home() {
 							/>
 
 							<ProjectCard
+								name="terminal-commands"
+								description="A (small) collection of terminal scripts I made because I need them :)"
+								isOpensource={true}
+								license="MIT"
+								codeurl="https://git.abmgrt.dev/exc_bad_access/terminal-commands"
+							/>
+
+							<ProjectCard
 								name="TennisBallTracker"
 								description="An app (for school) that tracks a tennis ball and draws that path it's flying on"
-								isDiscontinued={true}
 								isOpensource={true}
 								license="MIT"
 								codeurl="https://git.abmgrt.dev/exc_bad_access/TennisBallTracker"
@@ -77,7 +102,6 @@ export default function Home() {
 							<ProjectCard
 								name="Videoscreen"
 								description="an app that outputs the OBS virtual camera (idek)"
-								isDiscontinued={true}
 								isOpensource={true}
 								license="WTFPL"
 								codeurl="https://git.abmgrt.dev/exc_bad_access/Videoscreen"
@@ -109,16 +133,19 @@ export default function Home() {
 								here
 							</a>
 						</p>
-						<p className="mt-2 text-gray-500 text-sm ml-2">
-							(Almost all of them discontinued but I'm working on something I
-							haven't announced yet ;) )
+						<p className="mt-2 text-gray-500 text-sm ml-2 italic">
+							(Discontinued: No support for a project that needs active support
+							(online service, beta state,...))
 						</p>
 					</div>
 				</div>
 				<div className="mt-6">
 					<p className="text-2xl font-semibold">Other stuff</p>
 					<div className="mx-2">
-						<p>Here's a list of other stuff I did. Pretty empty yet...</p>
+						<p>
+							Here's a list of other stuff I did (and I want to share here).
+							Pretty empty yet...
+						</p>
 						<ul className="list-decimal	mx-6">
 							<li>
 								<a
@@ -145,7 +172,7 @@ export default function Home() {
 				</div>
 			</div>
 			<div
-				className="bg-gray-100 dark:bg-dark-secondary flex justify-center"
+				className="bg-gray-50 dark:bg-dark-secondary flex justify-center"
 				style={{ height: '2000px' }}
 			>
 				<iframe
@@ -170,18 +197,18 @@ function ProjectCard({
 	codeurl,
 }) {
 	return (
-		<div className="border border-gray-400 rounded-xl p-3">
+		<div className="border rounded-2xl p-4 border-transparent shadow dark:bg-dark-secondary bg-gray-50">
 			<div className="flex flex-col justify-center items-center text-center">
 				<p className="font-bold text-xl">{name}</p>
 				<div className="flex mt-3">
 					{isOpensource == true ? (
 						<div
-							className={`border border-green-600 rounded ${
+							className={`border border-transparent bg-green-500 rounded-lg ${
 								isDiscontinued ? 'mr-2' : ''
 							}`}
 						>
 							<div className="p-1">
-								<p className="text-sm text-green-600 italic">
+								<p className="text-sm text-white italic">
 									Open-Source {license !== undefined ? `(${license})` : ''}
 								</p>
 							</div>
@@ -190,9 +217,9 @@ function ProjectCard({
 						<div></div>
 					)}
 					{isDiscontinued == true ? (
-						<div className="border border-yellow-600 rounded">
+						<div className="border border-transparent bg-yellow-500 rounded-lg">
 							<div className="p-1">
-								<p className="text-sm text-yellow-600 italic">Discontinued</p>
+								<p className="text-sm text-white italic">Discontinued</p>
 							</div>
 						</div>
 					) : (
