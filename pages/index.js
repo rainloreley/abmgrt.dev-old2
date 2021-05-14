@@ -29,12 +29,12 @@ export default function Home() {
 					<div className="mx-2">
 						<p className="mt-2">
 							Idk, who am I? Most people know me as "Adrian", so I guess you can
-							call me that.
+							call me that most of the time.
 						</p>
 						<p>
 							When I'm motivated, I do some coding stuff. Mostly mobile app
 							development (for iOS, <i>sometimes</i> for Android) and web
-							development
+							development.
 						</p>
 						<p>
 							There are some programming languages I know such as Swift,
@@ -93,7 +93,7 @@ export default function Home() {
 
 							<ProjectCard
 								name="TennisBallTracker"
-								description="An app (for school) that tracks a tennis ball and draws that path it's flying on"
+								description="An app (for school) that tracks a tennis ball and draws its flight path."
 								isOpensource={true}
 								license="MIT"
 								codeurl="https://git.abmgrt.dev/exc_bad_access/TennisBallTracker"
@@ -161,13 +161,27 @@ export default function Home() {
 				</div>
 				<div className="mt-6 mb-10">
 					<p className="text-2xl font-semibold">Contact</p>
+
 					<div className="mx-2">
 						<p>
-							My email address including the PGP public key are available{' '}
-							<a href="/pgp" className="underline text-blue-500">
-								here
-							</a>
+							If you ever need to contact me (idk why), there are a few ways:
 						</p>
+						<ul className="list-disc mx-5">
+							<li>
+								<a href="/pgp" className="underline text-blue-500">
+									Email
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://t.me/exc_bad_access"
+									className="underline text-blue-500"
+								>
+									Telegram
+								</a>
+							</li>
+							<li>Discord: exc#9301</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -231,7 +245,7 @@ function ProjectCard({
 					{url !== undefined ? (
 						<a
 							href={url}
-							className={`bg-blue-500 border-blue-500 hover:bg-blue-600 hover:border-blue-600 rounded-md p-2 text-white mt-2 ${
+							className={`bg-blue-500 hover:bg-blue-600 rounded-xl p-2 text-white mt-2 ${
 								codeurl !== undefined ? 'mr-2' : ''
 							}`}
 							target="_blank"
@@ -244,7 +258,7 @@ function ProjectCard({
 					{codeurl !== undefined ? (
 						<a
 							href={codeurl}
-							className={`bg-blue-500 border-blue-500 hover:bg-blue-600 hover:border-blue-600 rounded-md p-2 text-white mt-2`}
+							className={`bg-blue-500 hover:bg-blue-600 rounded-xl p-2 text-white mt-2`}
 							target="_blank"
 						>
 							Code
