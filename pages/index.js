@@ -146,7 +146,7 @@ export default function Home() {
 							Here's a list of other stuff I did (and I want to share here).
 							Pretty empty yet...
 						</p>
-						<ul className="list-decimal	mx-6">
+						<ul className="list-disc mx-6">
 							<li>
 								<a
 									className="underline text-blue-500"
@@ -154,6 +154,15 @@ export default function Home() {
 									target="_blank"
 								>
 									How to export Google Photos and keep creation date (EXIF)
+								</a>
+							</li>
+							<li>
+								<a
+									className="underline text-blue-500"
+									href="https://go.abmgrt.dev/gfs-2021-physik"
+									target="_blank"
+								>
+									GFS 2-Dimensionale Bewegungen (2021 - german)
 								</a>
 							</li>
 						</ul>
