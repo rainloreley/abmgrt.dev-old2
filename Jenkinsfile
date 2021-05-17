@@ -9,12 +9,12 @@ pipeline {
 		stage ('Install') {			
 			steps {			
 				sh 'npm i'			
-				sh 'npm i -g vercel'			
+				sh 'npm i vercel'			
 			}			
 		}			
 		stage ('Deploy') {			
 			steps {			
-				sh 'vercel --prod --token $VERCEL_KEY --confirm'			
+				sh './node_modules/.bin/vercel --prod --token $VERCEL_KEY --confirm'			
 			}			
 		}			
 	}			
