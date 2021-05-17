@@ -14,7 +14,7 @@ pipeline {
 		}			
 		stage ('Deploy') {			
 			steps {			
-				sh './node_modules/.bin/vercel --prod --token $VERCEL_KEY --confirm'			
+				sh './node_modules/.bin/vercel --prod --token $VERCEL_KEY --confirm --name abmgrt-dev'			
 			}			
 		}			
 	}			
