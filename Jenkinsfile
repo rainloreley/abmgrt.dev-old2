@@ -34,7 +34,7 @@ pipeline {
 	post {
 		always {
 			archiveArtifacts artifacts: 'out/**/*'
-			discordSend description: "Jenkins abmgrt.dev Pipeline Build", footer: "", link: env.BUILD_URL, result: currentBuild, title: JOB_NAME, webbookURL: DISCORD_URL
+			discordSend description: "Jenkins abmgrt.dev Pipeline Build", footer: "", link: env.BUILD_URL, result: currentBuild, title: JOB_NAME, webhookURL: DISCORD_URL
 		}
 	}		
 }
