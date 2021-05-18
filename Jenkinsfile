@@ -3,17 +3,29 @@ pipeline {
 
 	environment {			
 		VERCEL_KEY = credentials("vercel-token")			
-	}			
+	}
 
 	stages {			
 		stage ('Install') {			
 			steps {			
 				sh 'npm i'			
-				sh 'npm i vercel'			
+				sh 'npm i vercel'
 			}			
-		}			
-		stage ('Deploy') {			
-			steps {			
+		}
+		stage ('Build') {
+			when {
+				expression { BRANCH_NAME ==~ /((?!main).)*/ }
+			}
+			steps {
+				sh 'npm run build'
+			}
+		}
+		stage ('Build & Deploy') {
+			when {
+				branch 'main'
+			}	
+			steps {
+				sh 'npm i vercel'	
 				sh './node_modules/.bin/vercel --prod --token $VERCEL_KEY --confirm --name abmgrt-dev'			
 			}			
 		}			
