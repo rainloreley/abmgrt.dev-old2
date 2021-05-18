@@ -12,9 +12,9 @@ pipeline {
 			}			
 		}
 		stage ('Build') {
-			when {
-				expression { BRANCH_NAME ==~ /((?!main).)*/ }
-			}
+			//when {
+			//	expression { BRANCH_NAME ==~ /((?!main).)*/ }
+			//}
 			steps {
 				sh 'npm run build'
 			}
@@ -28,5 +28,10 @@ pipeline {
 				sh './node_modules/.bin/vercel --prod --token $VERCEL_KEY --confirm --name abmgrt-dev'			
 			}			
 		}			
-	}			
+	}
+	post {
+		always {
+			archiveArtifacts artifacts: 'out/**/*'
+		}
+	}		
 }
