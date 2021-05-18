@@ -2,7 +2,8 @@ pipeline {
 	agent { docker { image 'node:16-alpine' } }			
 
 	environment {			
-		VERCEL_KEY = credentials("vercel-token")			
+		VERCEL_KEY = credentials("vercel-token")
+		DISCORD_URL = credentials("jenkins-discord")		
 	}
 
 	stages {			
@@ -33,6 +34,7 @@ pipeline {
 	post {
 		always {
 			archiveArtifacts artifacts: 'out/**/*'
+			discordSend description "Jenkins abmgrt.dev Pipeline Build", footer: "", link: env.BUILD_URL, result: currentBuild, title: JOB_NAME, webbookURL: DISCORD_URL
 		}
 	}		
 }
