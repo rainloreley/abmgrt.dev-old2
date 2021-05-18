@@ -17,6 +17,7 @@ pipeline {
 			//}
 			steps {
 				sh 'npm run build'
+				sh 'npm run export'
 			}
 		}
 		stage ('Build & Deploy') {
