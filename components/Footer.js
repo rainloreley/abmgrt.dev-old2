@@ -27,18 +27,32 @@ export default function Footer() {
 			<a onClick={increaseCounter}>
 				<FooterEasterEggRenderer count={clickCounter} />
 			</a>
+			<div className="md:hidden">
+				<a
+					className="underline mr-4 text-gray-700 dark:text-gray-400"
+					href="/legal"
+				>
+					Legal Disclosure
+				</a>
+			</div>
 			<div className="items-end md:block hidden">
 				<a
-					className="underline mr-3"
+					className="underline mr-3 text-gray-700 dark:text-gray-400"
 					href="https://git.abmgrt.dev/exc_bad_access/abmgrt.dev"
 					target="_blank"
 				>
 					Source Code
 				</a>
-				<a className="underline mr-3" href="/privacy">
+				<a
+					className="underline mr-3 text-gray-700 dark:text-gray-400"
+					href="/privacy"
+				>
 					Privacy
 				</a>
-				<a className="underline mr-4" href="/legal">
+				<a
+					className="underline mr-4 text-gray-700 dark:text-gray-400"
+					href="/legal"
+				>
 					Legal Disclosure
 				</a>
 			</div>
