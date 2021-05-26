@@ -183,8 +183,18 @@ export default function Home() {
 							</li>
 							<li>
 								<a
+									href="https://threema.id/E8KVUJT3"
+									className="underline text-blue-500"
+									target="_blank"
+								>
+									Threema
+								</a>
+							</li>
+							<li>
+								<a
 									href="https://t.me/exc_bad_access"
 									className="underline text-blue-500"
+									target="_blank"
 								>
 									Telegram
 								</a>
