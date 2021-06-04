@@ -51,12 +51,12 @@ export default function Home() {
 						</p>
 						<div className="grid lg:grid-cols-3 gap-6 justify-center mt-4 ml-4 md:grid-cols-2 grid-cols-1">
 							<ProjectCard
-								name="hetznercloudapp-ios"
-								description="An iOS app to manage Hetzner Cloud servers (not ready yet - name pending)"
+								name="Aurora"
+								description="An unofficial iOS app to manage Hetzner Cloud servers"
 								license="MIT"
 								isDiscontinued={false}
 								isOpensource={true}
-								codeurl="https://git.abmgrt.dev/exc_bad_access/hetznercloudapp-ios"
+								codeurl="https://git.abmgrt.dev/exc_bad_access/aurora"
 							/>
 							<ProjectCard
 								name="Spica"
