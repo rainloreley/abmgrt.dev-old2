@@ -165,6 +165,15 @@ export default function Home() {
 									GFS 2-Dimensionale Bewegungen (2021 - german)
 								</a>
 							</li>
+							<li>
+								<a
+									className="underline text-blue-500"
+									href="https://go.abmgrt.dev/oop-2021-nwt"
+									target="_blank"
+								>
+									Referat Objektorientierte Programmierung (2021 - german)
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
