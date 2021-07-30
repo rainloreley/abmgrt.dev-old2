@@ -186,17 +186,17 @@ export default function Home() {
 						</p>
 						<ul className="list-disc mx-5">
 							<li>
-								<a href="/pgp" className="underline text-blue-500">
-									Email
-								</a>
-							</li>
-							<li>
 								<a
-									href="https://threema.id/E8KVUJT3"
+									href="http://discord.com/users/419890490406862859"
 									className="underline text-blue-500"
 									target="_blank"
 								>
-									Threema
+									Discord
+								</a>
+							</li>
+							<li>
+								<a href="/pgp" className="underline text-blue-500">
+									Email
 								</a>
 							</li>
 							<li>
@@ -208,7 +208,15 @@ export default function Home() {
 									Telegram
 								</a>
 							</li>
-							<li>Discord: exc#9301</li>
+							<li>
+								<a
+									href="https://threema.id/E8KVUJT3"
+									className="underline text-blue-500"
+									target="_blank"
+								>
+									Threema
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
