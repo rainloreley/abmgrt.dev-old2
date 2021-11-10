@@ -71,7 +71,7 @@ export default function Privacy() {
 				<PrivacyLine>
 					And if you wonder you can check the source code{' '}
 					<a
-						href="https://git.abmgrt.dev/exc_bad_access/abmgrt.dev"
+						href="https://github.com/rainloreley/abmgrt.dev"
 						target="_blank"
 						className="underline text-blue-600"
 					>
