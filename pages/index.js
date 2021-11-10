@@ -6,31 +6,27 @@ export default function Home() {
 			<div className="w-full flex flex-col mt-12 px-4">
 				<div className="flex flex-row justify-between items-center mb-2">
 					<div className="flex flex-col">
-						<p className="font-bold text-3xl">Hello there!</p>
+						<p className="font-bold text-3xl">A random website</p>
+						<div className="ml-2">
+							<p className="text-md font-bold">
+								Adrian/Loreley (whatever, idc)
+							</p>
+							<p className="text-gray-500 text-sm">they/them</p>
+						</div>
 						{Math.random() * 100 < 10 ? (
 							<p className="italic text-gray-500">The cake is a lie</p>
 						) : (
 							<p></p>
 						)}
 					</div>
-					<img
-						src={
-							'https://www.gravatar.com/avatar/1615be3776f4bdfa985afdea244eb1b3'
-						}
-						className="w-12 h-12 rounded-full ml-4 mr-4 shadow"
-					/>
 				</div>
 				<p className="mt-2">Welcome to my website! Here's a cookie: 🍪</p>
 				<p className="italic text-gray-500 text-sm ml-2">
-					jk, this website doesn't use/need cookies ;)
+					jk, no cookies here ;)
 				</p>
 				<div className="mt-6">
-					<p className="text-2xl font-semibold">$ whoami</p>
+					<p className="text-2xl font-semibold">What do I do</p>
 					<div className="mx-2">
-						<p className="mt-2">
-							Idk, who am I? Most people know me as "Adrian", so I guess you can
-							call me that most of the time.
-						</p>
 						<p>
 							When I'm motivated, I do some coding stuff. Mostly mobile app
 							development (for iOS, <i>sometimes</i> for Android) and web
@@ -51,12 +47,28 @@ export default function Home() {
 						</p>
 						<div className="grid lg:grid-cols-3 gap-6 justify-center mt-4 ml-4 md:grid-cols-2 grid-cols-1">
 							<ProjectCard
+								name="Lyra"
+								description="Open source DMX control software (WIP)"
+								license="MIT"
+								isDiscontinued={false}
+								isOpensource={true}
+								codeurl="https://github.com/rainloreley/lyra"
+							/>
+							<ProjectCard
+								name="random edupage app"
+								description="an attempt to build a better Edupage app (WIP)"
+								license="MIT"
+								isDiscontinued={false}
+								isOpensource={true}
+								codeurl="https://github.com/rainloreley/edupage-app"
+							/>
+							<ProjectCard
 								name="Aurora"
 								description="An unofficial iOS app to manage Hetzner Cloud servers"
 								license="MIT"
 								isDiscontinued={false}
 								isOpensource={true}
-								codeurl="https://git.abmgrt.dev/exc_bad_access/aurora"
+								codeurl="https://github.com/rainloreley/aurora"
 							/>
 							<ProjectCard
 								name="Spica"
@@ -64,7 +76,6 @@ export default function Home() {
 								license="MIT"
 								isDiscontinued={true}
 								isOpensource={true}
-								url="https://spica.li"
 							/>
 							<ProjectCard
 								name="KlassenApp"
@@ -72,7 +83,7 @@ export default function Home() {
 								isOpensource={true}
 								license="MIT"
 								description="An app made by a friend and me for our class with homework, tests,..."
-								codeurl="https://git.abmgrt.dev/exc_bad_access/klassenapp"
+								codeurl="https://github.com/rainloreley/klassenapp"
 							/>
 
 							<ProjectCard
@@ -80,7 +91,7 @@ export default function Home() {
 								description="Simple http API for DSM (Synology DiskStation Manager) to use Cloudflare as a DDNS provider"
 								isOpensource={true}
 								license="MIT"
-								codeurl="https://git.abmgrt.dev/exc_bad_access/DSMCloudflareDDNS"
+								codeurl="https://github.com/rainloreley/DSMCloudflareDDNS"
 							/>
 
 							<ProjectCard
@@ -88,7 +99,7 @@ export default function Home() {
 								description="A (small) collection of terminal scripts I made because I need them :)"
 								isOpensource={true}
 								license="MIT"
-								codeurl="https://git.abmgrt.dev/exc_bad_access/terminal-commands"
+								codeurl="https://github.com/rainloreley/terminal-commands"
 							/>
 
 							<ProjectCard
@@ -96,7 +107,7 @@ export default function Home() {
 								description="An app (for school) that tracks a tennis ball and draws its flight path."
 								isOpensource={true}
 								license="MIT"
-								codeurl="https://git.abmgrt.dev/exc_bad_access/TennisBallTracker"
+								codeurl="https://github.com/rainloreley/TennisBallTracker"
 							/>
 
 							<ProjectCard
@@ -104,7 +115,6 @@ export default function Home() {
 								description="an app that outputs the OBS virtual camera (idek)"
 								isOpensource={true}
 								license="WTFPL"
-								codeurl="https://git.abmgrt.dev/exc_bad_access/Videoscreen"
 							/>
 							<ProjectCard
 								name="Appfall"
@@ -113,7 +123,7 @@ export default function Home() {
 								isOpensource={true}
 								license="MIT"
 								url="https://appfall.github.io/"
-								codeurl="https://git.abmgrt.dev/exc_bad_access/appfall-ios"
+								codeurl="https://github.com/rainloreley/appfall-ios"
 							/>
 							<ProjectCard
 								name="Mira"
@@ -126,7 +136,7 @@ export default function Home() {
 							... and even more. All of my projects (that are open-source) are
 							available{' '}
 							<a
-								href="https://git.abmgrt.dev/exc_bad_access"
+								href="https://github.com/rainloreley"
 								target="_blank"
 								className="underline text-blue-500"
 							>
@@ -222,16 +232,22 @@ export default function Home() {
 				</div>
 			</div>
 			<div
-				className="bg-gray-50 dark:bg-dark-secondary flex justify-center"
+				className="bg-gray-50 dark:bg-dark-secondary flex flex-col content-between justify-between justify-center"
 				style={{ height: '2000px' }}
 			>
-				<iframe
-					className="mt-4 md:w-96 md:h-56 w-3/4 bottom-0 self-end rounded-xl mb-10"
-					src="https://www.youtube-nocookie.com/embed/QH2-TGUlwu4"
-					frameBorder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowFullScreen
-				></iframe>
+				<div />
+				<div className="flex justify-center mb-10">
+					<div>
+						<iframe
+							className="mt-4 md:w-96 md:h-56 w-3/4 bottom-0 self-end rounded-xl"
+							src="https://www.youtube-nocookie.com/embed/AaEmCFiNqP0"
+							frameBorder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowFullScreen
+						></iframe>
+						<p className="text-gray-500">{'Jazz <3'}</p>
+					</div>
+				</div>
 			</div>{' '}
 		</Page>
 	);
@@ -281,7 +297,7 @@ function ProjectCard({
 					{url !== undefined ? (
 						<a
 							href={url}
-							className={`bg-blue-500 hover:bg-blue-600 rounded-xl p-2 text-white mt-2 ${
+							className={`bg-blue-500 hover:bg-blue-600 rounded-xl p-2 px-4 text-white mt-2 ${
 								codeurl !== undefined ? 'mr-2' : ''
 							}`}
 							target="_blank"
@@ -294,7 +310,7 @@ function ProjectCard({
 					{codeurl !== undefined ? (
 						<a
 							href={codeurl}
-							className={`bg-blue-500 hover:bg-blue-600 rounded-xl p-2 text-white mt-2`}
+							className={`bg-blue-500 hover:bg-blue-600 rounded-xl p-2 px-4 text-white mt-2`}
 							target="_blank"
 						>
 							Code

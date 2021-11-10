@@ -15,10 +15,14 @@ export default function PGP() {
 					important
 				</p>
 				<p className="mb-4">
-					My main email address is <b>adrian@abmgrt.dev</b>, so please use this
-					if you try to contact me, thanks! ^^
+					My main email address is <b>mail@lory.dev</b>, so please use this if
+					you try to contact me, thanks! ^^
 				</p>
 				<div>
+					<PGPEntry
+						email="mail@lory.dev"
+						fingerprint="C310 E494 34AF D204 201A 699B 4EC4 9027 135C 22CD"
+					/>
 					<PGPEntry
 						email="adrian@abmgrt.dev"
 						fingerprint="4E4A 4B09 5277 6E3A FF94 5500 B6CC 77BC 47B5 6030"

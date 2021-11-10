@@ -38,7 +38,7 @@ export default function Footer() {
 			<div className="items-end md:block hidden">
 				<a
 					className="underline mr-3 text-gray-700 dark:text-gray-400"
-					href="https://git.abmgrt.dev/exc_bad_access/abmgrt.dev"
+					href="https://github.com/rainloreley/abmgrt.dev"
 					target="_blank"
 				>
 					Source Code
