@@ -20,7 +20,7 @@ export default function Privacy() {
 				<p>-------</p>
 				<p className="mb-2">
 					<i>
-						<u>Effective date: February 21, 2021</u>
+						<u>Effective date: February 20, 2022</u>
 					</i>
 				</p>
 				<PrivacyLine>We're no strangers to privacy</PrivacyLine>
@@ -30,7 +30,7 @@ export default function Privacy() {
 				<PrivacyLine>I just wanna tell you what I'm doing</PrivacyLine>
 				<PrivacyLine>Gotta make you understand</PrivacyLine>
 				<PrivacyLine>Never gonna steal your data</PrivacyLine>
-				<PrivacyLine>Never gonna sell it to Facebook</PrivacyLine>
+				<PrivacyLine>Never gonna sell it to Meta</PrivacyLine>
 				<PrivacyLine>Never gonna use data for something harmful</PrivacyLine>
 				<PrivacyLine>Never gonna make you worried</PrivacyLine>
 				<PrivacyLine>Never gonna break the law</PrivacyLine>
@@ -51,13 +51,13 @@ export default function Privacy() {
 					</a>
 				</PrivacyLine>
 				<PrivacyLine>Never gonna steal your data</PrivacyLine>
-				<PrivacyLine>Never gonna sell it to Facebook</PrivacyLine>
+				<PrivacyLine>Never gonna sell it to Meta</PrivacyLine>
 				<PrivacyLine>Never gonna use data for something harmful</PrivacyLine>
 				<PrivacyLine>Never gonna make you worried</PrivacyLine>
 				<PrivacyLine>Never gonna break the law</PrivacyLine>
 				<PrivacyLine>Never gonna tell a lie and hurt you</PrivacyLine>
 				<PrivacyLine>Never gonna steal your data</PrivacyLine>
-				<PrivacyLine>Never gonna sell it to Facebook</PrivacyLine>
+				<PrivacyLine>Never gonna sell it to Meta</PrivacyLine>
 				<PrivacyLine>Never gonna use data for something harmful</PrivacyLine>
 				<PrivacyLine>Never gonna make you worried</PrivacyLine>
 				<PrivacyLine>Never gonna break the law</PrivacyLine>
@@ -82,13 +82,13 @@ export default function Privacy() {
 				<PrivacyLine>I just wanna tell you what I'm doing</PrivacyLine>
 				<PrivacyLine>Gotta make you understand</PrivacyLine>
 				<PrivacyLine>Never gonna steal your data</PrivacyLine>
-				<PrivacyLine>Never gonna sell it to Facebook</PrivacyLine>
+				<PrivacyLine>Never gonna sell it to Meta</PrivacyLine>
 				<PrivacyLine>Never gonna use data for something harmful</PrivacyLine>
 				<PrivacyLine>Never gonna make you worried</PrivacyLine>
 				<PrivacyLine>Never gonna break the law</PrivacyLine>
 				<PrivacyLine>Never gonna tell a lie and hurt you</PrivacyLine>
 				<PrivacyLine>Never gonna steal your data</PrivacyLine>
-				<PrivacyLine>Never gonna sell it to Facebook</PrivacyLine>
+				<PrivacyLine>Never gonna sell it to Meta</PrivacyLine>
 				<PrivacyLine>Never gonna use data for something harmful</PrivacyLine>
 				<PrivacyLine>Never gonna make you worried</PrivacyLine>
 				<PrivacyLine>Never gonna break the law</PrivacyLine>

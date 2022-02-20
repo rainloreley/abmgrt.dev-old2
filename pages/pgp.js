@@ -15,18 +15,19 @@ export default function PGP() {
 					important
 				</p>
 				<p className="mb-4">
-					My main email address is <b>mail@lory.dev</b>, so please use this if
-					you try to contact me, thanks! ^^
+					My main email address is <b>adrian@abmgrt.dev</b>, so please use this
+					if you try to contact me, thanks! ^^
 				</p>
 				<div>
-					<PGPEntry
-						email="mail@lory.dev"
-						fingerprint="C310 E494 34AF D204 201A 699B 4EC4 9027 135C 22CD"
-					/>
 					<PGPEntry
 						email="adrian@abmgrt.dev"
 						fingerprint="4E4A 4B09 5277 6E3A FF94 5500 B6CC 77BC 47B5 6030"
 					/>
+					<PGPEntry
+						email="mail@lory.dev"
+						fingerprint="C310 E494 34AF D204 201A 699B 4EC4 9027 135C 22CD"
+					/>
+
 					<PGPEntry
 						email="adrianbaumgart132@gmail.com"
 						fingerprint="C11C D01D 8454 EAB6 C129 C8C0 F007 100A A9FB E3EF"
@@ -54,7 +55,7 @@ function PGPEntry({ email, fingerprint }) {
 					PGP public key
 				</a>
 			</p>
-			<p className="text-gray-500 text-sm break-normal	">
+			<p className="text-gray-500 text-sm break-normal">
 				Fingerprint: {fingerprint}
 			</p>
 		</div>

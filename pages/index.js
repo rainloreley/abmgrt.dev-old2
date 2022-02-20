@@ -1,40 +1,98 @@
+import { GitHub, Instagram, Mail, Twitter } from 'react-feather';
 import Page from '../components/Page';
 
 export default function Home() {
 	return (
 		<Page title="Home">
-			<div className="w-full flex flex-col mt-12 px-4">
-				<div className="flex flex-row justify-between items-center mb-2">
-					<div className="flex flex-col">
-						<p className="font-bold text-3xl">A random website</p>
-						<div className="ml-2">
-							<p className="text-md font-bold">
-								Adrian/Loreley (whatever, idc)
-							</p>
-							<p className="text-gray-500 text-sm">they/them</p>
-						</div>
-						{Math.random() * 100 < 10 ? (
-							<p className="italic text-gray-500">The cake is a lie</p>
-						) : (
-							<p></p>
-						)}
+			<div className="m-2">
+				<img src="/nyancat.png" width={70} />
+			</div>
+			<div className="w-full flex flex-col mt-6 px-4">
+				<div className="flex items-center flex-col w-full justify-center my-4">
+					<h2 className="font-semibold text-lg">Hello! I am</h2>
+					<h1 className="font-bold text-3xl">Adrian Baumgart</h1>
+					<p className="text-gray-500 italic text-md">they/she/he</p>
+
+					<h2 className="text-xl font-semibold">... and I code stuff</h2>
+					<p className="text-gray-500 italic text-sm">
+						also known as: rainloreley, loreley
+					</p>
+					<div className="flex mt-3">
+						<a
+							href="https://polywork.com/loreley"
+							target={'_blank'}
+							rel="noreferrer"
+							className="mx-2"
+						>
+							<img src="/svg/polywork-rubix-icon-color.svg" width={20} />
+						</a>
+						<a
+							href="https://matrix.to/#/@rainloreley:matrix.lory.dev"
+							target={'_blank'}
+							rel="noreferrer"
+							className="mx-2 w-5"
+						>
+							<svg viewBox="0 0 27.9 32" fill="currentColor">
+								<path d="m27.1 31.2v-30.5h-2.19v-0.732h3.04v32h-3.04v-0.732z" />
+								<path d="m8.23 10.4v1.54h0.044c0.385-0.564 0.893-1.03 1.49-1.37 0.58-0.323 1.25-0.485 1.99-0.485 0.72 0 1.38 0.14 1.97 0.42 0.595 0.279 1.05 0.771 1.36 1.48 0.338-0.5 0.796-0.941 1.38-1.32 0.58-0.383 1.27-0.574 2.06-0.574 0.602 0 1.16 0.074 1.67 0.22 0.514 0.148 0.954 0.383 1.32 0.707 0.366 0.323 0.653 0.746 0.859 1.27 0.205 0.522 0.308 1.15 0.308 1.89v7.63h-3.13v-6.46c0-0.383-0.015-0.743-0.044-1.08-0.0209-0.307-0.103-0.607-0.242-0.882-0.133-0.251-0.336-0.458-0.584-0.596-0.257-0.146-0.606-0.22-1.05-0.22-0.44 0-0.796 0.085-1.07 0.253-0.272 0.17-0.485 0.39-0.639 0.662-0.159 0.287-0.264 0.602-0.308 0.927-0.052 0.347-0.078 0.697-0.078 1.05v6.35h-3.13v-6.4c0-0.338-7e-3 -0.673-0.021-1-0.0114-0.314-0.0749-0.623-0.188-0.916-0.108-0.277-0.3-0.512-0.55-0.673-0.258-0.168-0.636-0.253-1.14-0.253-0.198 0.0083-0.394 0.042-0.584 0.1-0.258 0.0745-0.498 0.202-0.705 0.374-0.228 0.184-0.422 0.449-0.584 0.794-0.161 0.346-0.242 0.798-0.242 1.36v6.62h-3.13v-11.4z" />
+								<path d="m0.936 0.732v30.5h2.19v0.732h-3.04v-32h3.03v0.732z" />
+							</svg>
+						</a>
+						<a href="/pgp" className="mx-2">
+							<Mail size={20} />
+						</a>
+						<a
+							href="https://twitter.com/rainloreley"
+							target={'_blank'}
+							rel="noreferrer"
+							className="mx-2"
+						>
+							<Twitter size={20} color="#1DA1F2" />
+						</a>
+						<a
+							href="https://instagram.com/rainloreley"
+							target={'_blank'}
+							rel="noreferrer"
+							className="mx-2"
+						>
+							<Instagram size={20} color="#bc2a8d" />
+						</a>
+						<a
+							href="https://github.com/rainloreley"
+							target={'_blank'}
+							rel="noreferrer"
+							className="mx-2"
+						>
+							<GitHub size={20} />
+						</a>
 					</div>
 				</div>
-				<p className="mt-2">Welcome to my website! Here's a cookie: 🍪</p>
-				<p className="italic text-gray-500 text-sm ml-2">
-					jk, no cookies here ;)
-				</p>
 				<div className="mt-6">
 					<p className="text-2xl font-semibold">What do I do</p>
 					<div className="mx-2">
 						<p>
-							When I'm motivated, I do some coding stuff. Mostly mobile app
-							development (for iOS, <i>sometimes</i> for Android) and web
-							development.
+							When I'm motivated, I code. Mostly in Swift and
+							Javascript/Typescript.
+						</p>
+						<p className="text-sm text-gray-400 dark:text-gray-500 italic">
+							When not, I sit there and listen to the beautiful sounds of the
+							Dell PowerEdge R710 server sitting right next to me :P
 						</p>
 						<p>
-							There are some programming languages I know such as Swift,
-							JavaScript, TypeScript, Dart and a bit of Kotlin.
+							I'm interested in mobile and web development, but sometimes I
+							destroy backend databases or Linux systems as well (heh :D)
+						</p>
+						<p className="mt-2 italic text-sm text-gray-800 dark:text-gray-200">
+							You can probably find more information on my{' '}
+							<a
+								href="https://polywork.com/loreley"
+								target={'_blank'}
+								rel="noreferrer"
+								className="underline text-blue-500"
+							>
+								Polywork profile
+							</a>{' '}
+							lol
 						</p>
 					</div>
 				</div>
@@ -42,8 +100,15 @@ export default function Home() {
 					<p className="text-2xl font-semibold">Projects</p>
 					<div className="mx-2">
 						<p className="mt-2">
-							Here are some of my projects I worked on. I'm not saying they're
-							any good, but I'll list them here anyways.
+							Here are some of the projects I worked on. Most of them are
+							probably bad, but you can check out everything on{' '}
+							<a
+								href="https://github.com/rainloreley"
+								target="_blank"
+								className="underline text-blue-500"
+							>
+								GitHub
+							</a>
 						</p>
 						<div className="grid lg:grid-cols-3 gap-6 justify-center mt-4 ml-4 md:grid-cols-2 grid-cols-1">
 							<ProjectCard
@@ -132,17 +197,6 @@ export default function Home() {
 								isOpensource={false}
 							/>
 						</div>
-						<p className="mt-4 ml-2">
-							... and even more. All of my projects (that are open-source) are
-							available{' '}
-							<a
-								href="https://github.com/rainloreley"
-								target="_blank"
-								className="underline text-blue-500"
-							>
-								here
-							</a>
-						</p>
 						<p className="mt-2 text-gray-500 text-sm ml-2 italic">
 							(Discontinued: No support for a project that needs active support
 							(online service, beta state,...))
@@ -184,6 +238,15 @@ export default function Home() {
 									Referat Objektorientierte Programmierung (2021 - german)
 								</a>
 							</li>
+							<li>
+								<a
+									className="underline text-blue-500"
+									href="https://go.abmgrt.dev/gfs-22-02-info"
+									target={'_blank'}
+								>
+									GFS Digitale Bilder (2022 - german)
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -197,12 +260,15 @@ export default function Home() {
 						<ul className="list-disc mx-5">
 							<li>
 								<a
-									href="http://discord.com/users/419890490406862859"
+									href="https://matrix.to/#/@rainloreley:matrix.lory.dev"
 									className="underline text-blue-500"
 									target="_blank"
 								>
-									Discord
+									Matrix
 								</a>
+							</li>
+							<li>
+								<a>Discord: loreley#9301</a>
 							</li>
 							<li>
 								<a href="/pgp" className="underline text-blue-500">
